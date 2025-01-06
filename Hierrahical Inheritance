@@ -1,0 +1,28 @@
+class car{
+  public void sound(){
+    System.out.println("the car horn");
+  }
+  public void engine(){
+    System.out.println("the engine starts");
+  }
+}
+class honda extends car{
+  public void hondaPrice(){
+    System.out.println("the price of honda car is high");
+  }
+}
+
+class benz extends car{
+  public void benzcar(){
+    System.out.println("the benz is super expensive");
+  }
+}
+
+class Main{
+  public static void main(String args[]){
+    benz obj = new benz();
+    obj.benzcar();
+    obj.engine();
+    obj.sound();
+  }
+}
